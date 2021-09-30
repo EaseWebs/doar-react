@@ -94,6 +94,20 @@ export const StyledListItem = styled(({ ...rest }) => (
 
 StyledListItem.displayName = "ListGroupItem";
 
+export const StyledIcon = styled(({ ...rest }) => (
+    <div {...rest} />
+))<ColorProps>`
+    height: 35px;
+    width: 35px;
+    font-size: 16px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    ${colorStyle};
+`;
+
 export const StyledItemMiddle = styled.div`
     margin-left: 15px;
 `;

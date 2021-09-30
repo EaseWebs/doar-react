@@ -24,8 +24,8 @@ const WelcomeArea: FC = () => {
             <StyledWelcomeArea>
                 <StyledWelcomeLeft>
                     <Breadcrumb
-                        prev={[{ text: "Dashboard", link: "/" }]}
-                        title="Sales Monitoring"
+                        prev={[]}
+                        title="Dashbaord"
                         wcText="Welcome To Dashboard"
                     />
                 </StyledWelcomeLeft>

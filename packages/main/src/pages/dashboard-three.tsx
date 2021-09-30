@@ -19,9 +19,11 @@ const DashboardThree: React.FC = () => {
             <Content>
                 <WelcomeArea />
                 <Row gutters={10}>
-                    <RowTwo />
                     <RowOne />
+                    <RowTwo />
+                    <RowThree />
                     <RowFour />
+                    <RowFive />
                 </Row>
             </Content>
         </Layout>

@@ -7,13 +7,13 @@ const DropdownItem: React.FC = () => {
         <Media>
             <MediaLeft>
                 <Avatar size="sm" shape="circle" status="online">
-                    <AvatarInitial>df</AvatarInitial>
+                    <AvatarInitial>SU</AvatarInitial>
                 </Avatar>
             </MediaLeft>
             <StyledMediaBody>
-                <StyledStrong>Socrates Itumay</StyledStrong>
-                <StyledText>nam libero tempore cum so...</StyledText>
-                <StyledSpan>Mar 15 12:32pm</StyledSpan>
+                <StyledStrong>Suurya Prabhat</StyledStrong>
+                <StyledText>Admin</StyledText>
+                <StyledSpan>Sept 19 12:32pm</StyledSpan>
             </StyledMediaBody>
         </Media>
     );

@@ -26,8 +26,17 @@ const Calendar = lazy(() => import("./pages/apps/calendar"));
 const Chat = lazy(() => import("./pages/apps/chat"));
 const Contacts = lazy(() => import("./pages/apps/contacts"));
 const FileManager = lazy(() => import("./pages/apps/file-manager"));
-const Mail = lazy(() => import("./pages/apps/mail"));
-
+const MetalGroups = lazy(
+    () => import("./pages/Master/ProductData/metal-groups")
+);
+const Varieties = lazy(() => import("./pages/Master/ProductData/varieties"));
+const Products = lazy(() => import("./pages/Master/ProductData/products"));
+const Items = lazy(() => import("./pages/Master/ProductData/items"));
+const Collections = lazy(
+    () => import("./pages/Master/ProductData/collections")
+);
+const Catergories = lazy(() => import("./pages/Master/ProductData/categories"));
+const Metals = lazy(() => import("./pages/Master/ProductData/metals"));
 const App: React.FC = () => {
     return (
         <>
@@ -101,7 +110,41 @@ const App: React.FC = () => {
                             path="/apps/file-manager"
                             component={FileManager}
                         />
-                        <Route exact path="/apps/mail" component={Mail} />
+                        <Route
+                            exact
+                            path="/Master/ProductData/metal-groups"
+                            component={MetalGroups}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/metals"
+                            component={Metals}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/varieties"
+                            component={Varieties}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/collections"
+                            component={Collections}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/categories"
+                            component={Catergories}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/products"
+                            component={Products}
+                        />
+                        <Route
+                            exact
+                            path="/Master/ProductData/items"
+                            component={Items}
+                        />
                         <Route path="*" component={ErrorNotFound} />
                     </Switch>
                 </Suspense>

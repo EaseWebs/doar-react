@@ -27,14 +27,14 @@ const ProfileDropdown: React.FC = () => {
         <Dropdown direction="down" className="dropdown-profile">
             <DropdownToggle variant="texted">
                 <StyledAvatar size="sm" shape="circle">
-                    <AvatarInitial>df</AvatarInitial>
+                    <AvatarInitial>SU</AvatarInitial>
                 </StyledAvatar>
             </DropdownToggle>
             <StyledDropMenu>
                 <Avatar size="lg" shape="circle">
-                    <AvatarInitial>df</AvatarInitial>
+                    <AvatarInitial>SU</AvatarInitial>
                 </Avatar>
-                <StyledAuthorName>Katherine Pechon</StyledAuthorName>
+                <StyledAuthorName>Suurya Prabhat</StyledAuthorName>
                 <StyledAuthorRole>Administrator</StyledAuthorRole>
                 <StyledDropItem path="/profile-view">
                     <Edit3 size="24" />

@@ -56,5 +56,8 @@
   },
   "resolutions": {
     "webpack": "4.44.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.4"
   }
 }

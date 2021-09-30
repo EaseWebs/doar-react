@@ -1,29 +1,19 @@
 import { FC } from "react";
 import { Col } from "@doar/components";
-import { conversions } from "@doar/shared/data/dashboard-one";
-import Conversion from "../../../components/dashboard-one/conversion";
-import Portfolio from "../../../components/dashboard-three/portfolio";
+import CryptoChart from "../../../components/dashboard-three/crypto-chart";
+import Cryptcurrencies from "../../../components/dashboard-three/cryptocurrencies";
 
-const RowOne: FC = () => {
+const RowTwo: FC = () => {
     return (
         <>
-            {conversions.map((data) => (
-                <Col
-                    sm={6}
-                    lg={3}
-                    mt={["10px", null, null, "10px"]}
-                    key={data.id}
-                >
-                    <Conversion
-                        title={data.title}
-                        rate={data.rate}
-                        change={data.change}
-                        chart={data.chart}
-                    />
-                </Col>
-            ))}
+            <Col lg={9} mt="10px">
+                <CryptoChart />
+            </Col>
+            <Col lg={3} mt="10px">
+                <Cryptcurrencies />
+            </Col>
         </>
     );
 };
 
-export default RowOne;
+export default RowTwo;
