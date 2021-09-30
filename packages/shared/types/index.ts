@@ -18,6 +18,7 @@ export interface IMegamenu {
     submenu: ISubmenu[];
 }
 
+
 export interface IMenu {
     id: number;
     label: string;
@@ -25,6 +26,7 @@ export interface IMenu {
     Icon?: FC<IconProps> | undefined;
     submenu?: ISubmenu[];
     megamenu?: IMegamenu[];
+
 }
 
 export interface IChart {
@@ -71,12 +73,12 @@ export interface IRadial {
 
 export interface IEvent {
     category:
-        | "calendar"
-        | "birthday"
-        | "holiday"
-        | "discover"
-        | "meetup"
-        | "other";
+    | "calendar"
+    | "birthday"
+    | "holiday"
+    | "discover"
+    | "meetup"
+    | "other";
     backgroundColor: string;
     borderColor: string;
     events: Array<{

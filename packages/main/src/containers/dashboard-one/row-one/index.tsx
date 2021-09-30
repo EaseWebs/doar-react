@@ -9,7 +9,7 @@ const RowOne: FC = () => {
             {conversions.map((data) => (
                 <Col
                     sm={6}
-                    lg={3}
+                    lg={6}
                     mt={["10px", null, null, "0px"]}
                     key={data.id}
                 >

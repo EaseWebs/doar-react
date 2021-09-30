@@ -11,10 +11,10 @@ const RowFour: FC = () => {
                 <Transactions />
             </Col>
             <Col sm={6} lg={4} mt="10px">
-                <Transactions />
+                <PriceIndexes />
             </Col>
             <Col sm={6} lg={4} mt="10px">
-                <Transactions />
+                <BTCWallet />
             </Col>
         </>
     );

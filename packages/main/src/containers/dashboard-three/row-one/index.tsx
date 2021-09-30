@@ -25,14 +25,22 @@ const RowOne: FC = () => {
     };
     return (
         <>
-            <Col col={6} mt="10px">
+            <Col col={12}>
                 <Card>
                     <StyledBody>
                         <Media>
-                            <MediaBody mt="5px">
-                                <StyledTitle>Refer AND Earn</StyledTitle>
+                            <StyledAvatar>
+                                <i className="fab fa-bitcoin" />
+                            </StyledAvatar>
+                            <MediaBody ml="15px">
+                                <StyledTitle>
+                                    Buy Price <span>(24KT)</span>
+                                </StyledTitle>
                                 <StyledMediaBottom>
-                                    <StyledBTCNumber>BKS4567</StyledBTCNumber>
+                                    <StyledBTCNumber>$3,972.87</StyledBTCNumber>
+                                    <StyledBTCRate>
+                                        -$7.98(0.2006%)
+                                    </StyledBTCRate>
                                 </StyledMediaBottom>
                             </MediaBody>
                         </Media>
@@ -41,8 +49,17 @@ const RowOne: FC = () => {
                                 color="white"
                                 size="sm"
                                 hasIcon
-                                mt={["10px", "15px"]}
-                                ml={["10px", "5px"]}
+                                onClick={handleShowExportModal}
+                            >
+                                <Download size={14} strokeWidth="2.5px" />
+                                Export CSV
+                            </StyledButton>
+                            <StyledButton
+                                color="white"
+                                size="sm"
+                                hasIcon
+                                mt={["5px", "0px"]}
+                                ml={[null, "5px"]}
                                 onClick={handleShowShareModal}
                             >
                                 <Share2 size={14} strokeWidth="2.5px" />
@@ -52,12 +69,12 @@ const RowOne: FC = () => {
                                 color="white"
                                 size="sm"
                                 hasIcon
-                                mt={["10px", "15px"]}
-                                ml={["10px", "5px"]}
+                                mt={["5px", "0px"]}
+                                ml={[null, "5px"]}
                                 path="#!"
                             >
                                 <Eye size={14} strokeWidth="2.5px" />
-                                Check Referal Bonus
+                                Watch
                             </StyledButton>
                         </StyledRight>
                     </StyledBody>

@@ -4,7 +4,7 @@ import { StyledLogo } from "./style";
 const Logo: FC = () => {
     return (
         <StyledLogo path="/">
-            do<span>ar</span>
+            BKS<span>My Gold</span>
         </StyledLogo>
     );
 };

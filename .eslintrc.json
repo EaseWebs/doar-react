@@ -36,13 +36,7 @@
     "react/react-in-jsx-scope": "off",
     "no-alert": "off",
     "no-restricted-globals": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto",
-      }
-    ]
+    "jsx-a11y/click-events-have-key-events": "off"
   },
   "overrides": [
     // Override some TypeScript rules just for .js files

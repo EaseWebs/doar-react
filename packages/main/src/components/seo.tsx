@@ -20,9 +20,9 @@ const SEO: FC<IProps> = ({ title, titleTemplate, description }) => {
 };
 
 SEO.defaultProps = {
-    title: "Doar",
-    titleTemplate: "Responsive React Admin Template",
-    description: "Responsive React Admin Template",
+    title: "BKS MyGold",
+    titleTemplate: "Buy and Save for tomorrow",
+    description: "Indias First Buy and Save Jewellery Digital Platform",
 };
 
 export default SEO;

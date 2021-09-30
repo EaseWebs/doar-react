@@ -25,15 +25,15 @@ const Footer: React.FC = () => {
                 </StyledFooterNav>
             </StyledFooterRight>
             <StyledFooterLeft>
-                <span>&copy; Doar {new Date().getFullYear()} </span>
+                <span>&copy; BKS MyGold {new Date().getFullYear()} </span>
                 <span className="copright-link">
                     MADE WITH <Heart size="24" /> BY{"  "}
                     <a
-                        href="https://themeforest.net/user/bootxperts/portfolio"
+                        href="https://easebizz.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        BootXperts
+                        EaseBizz
                     </a>
                 </span>
             </StyledFooterLeft>
